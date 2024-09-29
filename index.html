@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Rock,Paper,Scissor</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="top">
+        <div id="statu">
+            <h2>You</h2>
+            <img src="./images/pfp.png" width="100px"/>
+            <h3 id="user-wins">Won 0</h3>
+        </div>
+        <h1 id="text-element">Good Luck:)</h1>
+        <div id="statc">
+            <h2>Computer</h2>
+            <img src="./images/pc.png" width="100px"/>
+            <h3 id="comp-wins">Wins : 0</h3>
+        </div>
+    </div>
+        <div id="hands">
+            <img id="user-hand" src="./images/rockxpositive.png"/>
+            <img id="comp-hand" src="./images/rockxnegative.png"/>
+        </div>
+        <div id="options">
+            <img src="./images/rock.png" id="option-rock" onclick="choseRock() ; computer();" />
+            <img src="./images/paper.png" id="option-paper" onclick="chosePaper() ; computer();" />
+            <img src="./images/scissor.png" id="option-scissor" onclick="choseScissor() ; computer();" />
+        </div>
+</body>

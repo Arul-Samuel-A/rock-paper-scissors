@@ -1,0 +1,118 @@
+@keyframes shake {
+
+    0% { transform: translateY(0); }
+    10% { transform: translateY(-5px); }
+    20% { transform: translateY(5px); }
+    30% { transform: translateY(-5px); }
+    40% { transform: translateY(5px); }
+    50% { transform: translateY(-5px); }
+    60% { transform: translateY(5px); }
+    70% { transform: translateY(-5px); }
+    80% { transform: translateY(5px); }
+    90% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+  
+.shake {
+    animation: shake 1s infinite;
+}
+
+
+
+#user-hand , #comp-hand{
+    width: 250px;
+}
+
+#option-rock,#option-paper,#option-scissor{
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100px;
+    border: 5px solid red;
+    border-radius: 50%;
+    background: radial-gradient(circle, aliceblue,#00b0ff);
+}
+
+#option-rock:hover,#option-paper:hover,#option-scissor:hover{
+    background: #00b0ff;
+}
+
+#option-rock:active,#option-paper:active,#option-scissor:active{
+    transform: scale(1.05);
+}
+
+
+#hands{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#statu,#statc {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10%;
+    border: black 2px dotted;
+    
+}
+
+#options{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#text-element{
+    text-align: center;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./images/wallpaper.jpg");
+    background-size: cover;
+    background-color: rgba(red, green, blue, 1);
+}
+
+#top{
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2{
+    font-size: 25px;
+    margin-bottom: -5px;
+}
+h3{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-top: -10px;
+    color: green;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 350px;
+}
+
